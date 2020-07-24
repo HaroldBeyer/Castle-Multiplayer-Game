@@ -1,0 +1,7 @@
+main: client.lua
+multiplayer:
+    enabled: true
+    serverMain: server.lua
+title: Tutorial Multiplayer
+owner: haroldbeyer
+description: Aprendendo a fazer um jogo online com castle
