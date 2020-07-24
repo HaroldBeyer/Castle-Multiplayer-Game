@@ -20,6 +20,8 @@ end
 function client.receive(message, ...)
     if message == 'otherClientPressedKey' then
         local otherClientId, key = ...
-        print('client: other client ' .. otherClientId .. " pressed key '" .. key .. "'")
+        if otherClientId ~= client.id then
+            print('client: other client ' .. otherClientId .. " pressed key '" .. key .. "'")
+        end
     end
 end
